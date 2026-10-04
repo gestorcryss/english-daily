@@ -1,0 +1,5 @@
+#!/bin/sh
+# Runs typecheck, lint and tests before every commit (activated by `npm install` in app/).
+set -e
+cd "$(git rev-parse --show-toplevel)/app"
+npm run --silent check

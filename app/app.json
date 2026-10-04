@@ -1,0 +1,82 @@
+{
+  "expo": {
+    "name": "English Daily",
+    "slug": "englishdaily",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "englishdaily",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "icon": "./assets/expo.icon",
+      "bundleIdentifier": "com.englishdaily.app",
+      "infoPlist": {
+        "CFBundleLocalizations": [
+          "pt",
+          "en"
+        ]
+      }
+    },
+    "android": {
+      "package": "com.englishdaily.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#1E4FD8",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "single",
+      "favicon": "./assets/images/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#1E4FD8",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 76
+        }
+      ],
+      [
+        "expo-localization",
+        {
+          "supportedLocales": {
+            "ios": [
+              "pt",
+              "en"
+            ],
+            "android": [
+              "pt",
+              "en"
+            ]
+          }
+        }
+      ],
+      "expo-sqlite",
+      "expo-font",
+      "expo-audio",
+      [
+        "expo-notifications",
+        {
+          "color": "#1E4FD8"
+        }
+      ],
+      "expo-asset"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "092a415c-fc71-466d-acd3-153f65a75572"
+      }
+    },
+    "owner": "gestorcrysss-team"
+  }
+}
